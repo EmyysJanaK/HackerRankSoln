@@ -1,1 +1,4 @@
-Select name from city where population > 120000 and Countrycode = "USA";
+SELECT NAME
+FROM CITY
+WHERE POPULATION > 120000
+AND COUNTRYCODE = "USA"
