@@ -1,9 +1,15 @@
-select distinct(city) from station where
-city like "a%" or
-city like "e%" or
-city like "i%" or
-city like "o%" or
-city like "u%";
+-- Query to find all distinct city names from the STATION table
+-- that start with a vowel
+-- This SQL query retrieves distinct city names from the STATION table
+SELECT DISTINCT CITY
+FROM STATION
+WHERE CITY LIKE "a%"
+   OR CITY LIKE "e%"
+   OR CITY LIKE "i%"
+   OR CITY LIKE "o%"
+   OR CITY LIKE "u%";
 
-# this works faster and better
-select distinct city from station where left(city,1) in('a','e','i','o','u')
+-- this works faster and better
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) IN ('a', 'e', 'i', 'o', 'u');
