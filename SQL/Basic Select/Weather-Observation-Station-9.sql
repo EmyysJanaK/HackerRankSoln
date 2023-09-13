@@ -1,1 +1,4 @@
-select distinct city from station where left(city,1) not in('a','e','i','o','u') 
+
+SELECT DISTINCT CITY
+FROM STATION
+WHERE LEFT(CITY, 1) NOT IN ('a', 'e', 'i', 'o', 'u');
