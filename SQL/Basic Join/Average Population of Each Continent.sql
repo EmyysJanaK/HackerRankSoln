@@ -1,1 +1,6 @@
-select country.continent, floor(avg(city.population)) from country join city on city.countrycode = country.code group by country.continent;
+-- This SQL query calculates the average population of cities in each continent
+-- by joining the COUNTRY and CITY tables, grouping by CONTINENT,
+SELECT COUNTRY.CONTINENT, FLOOR(AVG(CITY.POPULATION))
+FROM COUNTRY
+JOIN CITY ON CITY.COUNTRYCODE = COUNTRY.CODE
+GROUP BY COUNTRY.CONTINENT;
