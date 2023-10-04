@@ -1,3 +1,5 @@
+-- Title: Ollivander's Inventory
+-- Description: Retrieve the wands with the minimum coins needed for each age and power, excluding evil wands.
 SELECT a.id, 
        b.age, 
        a.coins_needed, 
