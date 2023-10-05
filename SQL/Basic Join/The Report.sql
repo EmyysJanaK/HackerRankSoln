@@ -1,3 +1,6 @@
+-- The Report
+-- Write a query to display the names of students who have grades greater than 7.
+-- The query should return the names of students, their grades, and their marks.
 SELECT CASE
          WHEN G.grade > 7 THEN S.name
          ELSE NULL
