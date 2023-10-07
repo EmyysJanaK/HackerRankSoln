@@ -1,3 +1,6 @@
+-- Top Competitors
+-- Find the hackers who have solved more than one challenge at the highest difficulty level.
+-- This query retrieves the hacker IDs and names of hackers who have solved more than one challenge
 SELECT H.hacker_id, 
        H.name 
 FROM   submissions S 
