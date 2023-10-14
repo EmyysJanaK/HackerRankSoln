@@ -1,8 +1,10 @@
-Select 
+-- This SQL query classifies triangles based on the lengths of their sides.
+-- It categorizes triangles as Equilateral, Isosceles, Scalene, or Not a Triangle
+SELECT 
 CASE
-when A + B <= C or A + C <= B or B + C <= A then "Not A Triangle"
-when A = B and B = C then "Equilateral"
-when A = B or A = C or B = C then "Isosceles"
-else "Scalene"
-end as triangle_sides
-from TRIANGLES
+WHEN A + B <= C OR A + C <= B OR B + C <= A THEN "Not A Triangle"
+WHEN A = B AND B = C THEN "Equilateral"
+WHEN A = B OR A = C OR B = C THEN "Isosceles"
+ELSE "Scalene"
+END AS triangle_sides
+FROM TRIANGLES
