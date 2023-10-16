@@ -1,3 +1,5 @@
+-- SQL Query to find the earliest project start date and the corresponding end date
+-- This SQL query retrieves the earliest project start date and the corresponding end date
 
 SELECT s.Proj_Start_Date, min(e.Proj_End_Date) as Real_Proj_End_Date 
 FROM
